@@ -1,54 +1,42 @@
-/*!
-* Start Bootstrap - Grayscale v7.0.6 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUI Pup – Believe Together</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-window.addEventListener('DOMContentLoaded', event => {
+  <!-- Hero Banner -->
+  <section class="section">
+    <img src="61704FC9-2A5A-4EBD-AC4A-33066D17D8A9.png" alt="Forest Gathering" class="full-img" />
+  </section>
 
-    // Navbar shrink function
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
+  <!-- Rally Poster -->
+  <section class="section">
+    <img src="42B77E14-48DE-4FE1-8B72-B6D2DD7FD605.png" alt="SP Grid Poster" class="full-img" />
+  </section>
 
-    };
+  <!-- Kitchen Quote -->
+  <section class="section">
+    <img src="B4C244BD-E0F7-42A7-BC39-8360D961C34E.png" alt="SP Kitchen" class="full-img" />
+  </section>
 
-    // Shrink the navbar 
-    navbarShrink();
+  <!-- Pilot Motivation -->
+  <section class="section">
+    <img src="0A9B4555-73C8-49A1-A43B-7ADBDA4B2141.png" alt="SP Pilot" class="full-img" />
+  </section>
 
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
+  <!-- Floating Purchase Button -->
+  <a href="#purchase" class="purchase-btn">🚀 Buy Now</a>
 
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            rootMargin: '0px 0px -40%',
-        });
-    };
+  <!-- Optional Footer -->
+  <footer class="footer">
+    <a href="https://suipup.github.io/SUIPup">Website</a>
+    <a href="https://t.me/SUIPupLounge">Telegram</a>
+    <a href="https://x.com/SUIPuppy">X</a>
+  </footer>
 
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
-    });
-
-});
+</body>
+</html>
